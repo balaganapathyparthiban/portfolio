@@ -39,6 +39,19 @@ const App = () => {
             />
           </a>
         </div>
+        <div className="mt-4 flex h-auto w-auto items-center px-4">
+          <a
+            className="mr-2 w-auto rounded-lg border p-2 font-semibold text-blue-800 shadow-lg"
+            href="https://quickshare.bginnovate.com"
+            target="_blank"
+          >
+            Quick Share
+            <img
+              src="/images/quickshare.png"
+              className="h-auto w-40 rounded-lg"
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
