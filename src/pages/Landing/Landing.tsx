@@ -16,15 +16,14 @@ const Landing: React.FC = () => {
 
     return (
         <main className="relative w-screen h-screen overflow-hidden">
-            <SideMenu show={showMenu} onMenuHandler={onMenuHandler} />
             <motion.div
                 className="absolute top-0 z-20 w-full h-full overflow-hidden shadow-lg"
                 variants={{
-                    visible: { x: "-80%", y: "6%", height: "90%", borderRadius: "24px" },
-                    hidden: { x: 0, y: 0, height: "100%", borderRadius: "0px" }
+                    visible: { x: "-75%" },
+                    hidden: { x: 0 }
                 }}
                 animate={showMenu ? "visible" : "hidden"}
-                transition={{ ease: "anticipate", duration: "0.5", delay: 0.25 }}
+                transition={{ ease: "easeInOut", duration: "0.5", delay: 0.25 }}
             >
                 <div
                     id="landing-view-port"
@@ -33,19 +32,24 @@ const Landing: React.FC = () => {
                     onClick={(event) => onMenuHandler(event, false)}
                 >
                     <div className="fixed top-0 z-10 w-full h-12">
-                        <Header onMenuHandler={onMenuHandler} />
+                        <Header sideMenuOpened={showMenu} onMenuHandler={onMenuHandler} />
                     </div>
-                    <div className="w-full h-auto p-2 mt-12">
-                        {
-                            Array(100).fill(null).map((e, i) => (
-                                <div key={i}>
-                                    <p>{i}</p>
-                                </div>
-                            ))
-                        }
+                    <div className="w-full h-auto p-4 mt-12">
+                        <div className='w-full h-auto'>
+                            <h1>Hi There, I'm</h1>
+                        </div>
+                        <div className='w-full h-auto'>
+                            <h2>Bala Ganapathy Parthiban</h2>
+                        </div>
+                        <div className='w-full h-auto'>
+                            <h3>
+                                A Software Engineer specialised in frontend and backend development for complex scalable web apps. Want to know more about my work? Check out my project portfolio & resume.
+                            </h3>
+                        </div>
                     </div>
                 </div>
             </motion.div>
+            <SideMenu show={showMenu} onMenuHandler={onMenuHandler} />
         </main>
     )
 }

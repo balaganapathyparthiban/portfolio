@@ -1,10 +1,12 @@
 import { memo, useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { BiMenuAltLeft } from 'react-icons/bi'
+import { MdClose } from 'react-icons/md'
 
 import { ReactComponent as Logo } from '../../../assets/images/logo.svg'
 
 interface IHeader {
+    sideMenuOpened: boolean,
     onMenuHandler?: (event: React.MouseEvent<any>, status: boolean) => void
 }
 
@@ -53,19 +55,40 @@ const Header: React.FC<IHeader> = (props) => {
     return (
         <motion.header
             ref={headerRef}
-            className="z-10 flex items-center justify-between w-full h-full px-2 py-1 bg-white"
+            className="z-10 flex items-center justify-between w-full h-full px-4 bg-white"
             variants={{
                 visible: { y: 0 },
                 hidden: { y: "-100%" }
             }}
             animate={hidden ? "hidden" : "visible"}
-            transition={{ ease: "anticipate", duration: "0.5" }}
+            transition={{ ease: "easeInOut", duration: "0.5" }}
         >
             <div className="w-10 h-full">
-                <Logo className="w-full h-full" />
+                <Logo className="w-full h-full text-primary" />
             </div>
-            <div className="w-10 h-full cursor-pointer" onClick={(event) => props.onMenuHandler && props.onMenuHandler(event, true)}>
-                <BiMenuAltLeft className="w-full h-full text-gray-800" />
+            <div className="w-10 h-full">
+                <motion.div
+                    className='w-full h-full hidden'
+                    variants={{
+                        visible: { opacity: 1, display: "block", x: 0 },
+                        hidden: { opacity: 0, display: "none", x: "25%" }
+                    }}
+                    animate={!props.sideMenuOpened ? "visible" : "hidden"}
+                    transition={{ ease: "easeInOut", duration: "1", delay: 0.5 }}
+                >
+                    <BiMenuAltLeft className="w-full h-full text-primary cursor-pointer" onClick={(event) => props.onMenuHandler && props.onMenuHandler(event, true)} />
+                </motion.div>
+                <motion.div
+                    className='w-full h-full hidden'
+                    variants={{
+                        visible: { opacity: 1, display: "block", x: 0 },
+                        hidden: { opacity: 0, display: "none", x: "-25%" }
+                    }}
+                    animate={props.sideMenuOpened ? "visible" : "hidden"}
+                    transition={{ ease: "easeInOut", duration: "1", delay: 0.5 }}
+                >
+                    <MdClose className="w-full h-full text-primary cursor-pointer" onClick={(event) => props.onMenuHandler && props.onMenuHandler(event, false)} />
+                </motion.div>
             </div>
         </motion.header>
     )

@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+* { -webkit-tap-highlight-color: transparent; }
+
 html, body, #root {
     width: 100vw;
     height: 100vh;

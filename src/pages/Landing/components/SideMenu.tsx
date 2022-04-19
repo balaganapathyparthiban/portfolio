@@ -8,7 +8,7 @@ interface ISideMenu {
 const SideMenu: React.FC<ISideMenu> = (props) => {
     return (
         <motion.div
-            className="absolute top-0 z-10 w-full h-full overflow-hidden text-white bg-deep-blue"
+            className="absolute top-0 z-10 w-full h-full overflow-hidden text-white bg-primary"
             variants={{
                 visible: {},
                 hidden: {}
@@ -17,7 +17,7 @@ const SideMenu: React.FC<ISideMenu> = (props) => {
             exit="hidden"
             transition={{ ease: "anticipate", duration: "0.5" }}
         >
-            <div className="flex flex-col items-end justify-start w-full h-full px-4 py-8">
+            <div className="flex flex-col items-end justify-start w-full h-full px-4">
                 <p>hello</p>
                 <p onClick={(event) => props.onMenuHandler && props.onMenuHandler(event, false)}>close</p>
             </div>
