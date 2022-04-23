@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { BiMenuAltLeft } from 'react-icons/bi'
 import { CgArrowLongLeftR } from 'react-icons/cg'
 
-import { ReactComponent as Logo } from '../../../assets/images/logo.svg'
+import { ReactComponent as Logo } from '../../assets/images/logo.svg'
 
 interface IHeader {
     sideMenuOpened: boolean,
@@ -66,9 +66,9 @@ const Header: React.FC<IHeader> = (props) => {
             <div className="w-10 h-full">
                 <Logo className="w-full h-full text-primary" />
             </div>
-            <div className="w-8 h-full">
+            <div className="w-auto h-full flex flex-row items-center">
                 <motion.div
-                    className='w-full h-full hidden'
+                    className='w-8 h-full hidden'
                     variants={{
                         visible: { opacity: 1, display: "block", x: 0 },
                         hidden: { opacity: 0, display: "none", x: "25%" }
@@ -79,7 +79,7 @@ const Header: React.FC<IHeader> = (props) => {
                     <BiMenuAltLeft className="w-full h-full text-primary cursor-pointer" onClick={(event) => props.onMenuHandler && props.onMenuHandler(event, true)} />
                 </motion.div>
                 <motion.div
-                    className='w-full h-full hidden'
+                    className='w-8 h-full hidden'
                     variants={{
                         visible: { opacity: 1, display: "block", x: 0 },
                         hidden: { opacity: 0, display: "none", x: "-25%" }

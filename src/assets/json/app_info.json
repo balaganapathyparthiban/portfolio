@@ -1,3 +1,72 @@
 {
-    
+    "technologies": [
+        {
+            "name": "HTML 5",
+            "logo": "/images/technologies/html5.svg"
+        },
+        {
+            "name": "CSS 3",
+            "logo": "/images/technologies/css3.svg"
+        },
+        {
+            "name": "SASS",
+            "logo": "/images/technologies/sass.svg"
+        },
+        {
+            "name": "Javascript",
+            "logo": "/images/technologies/javascript.svg"
+        },
+        {
+            "name": "Typescript",
+            "logo": "/images/technologies/typescript.svg"
+        },
+        {
+            "name": "React.js",
+            "logo": "/images/technologies/react.svg"
+        },
+        {
+            "name": "Angular 2+",
+            "logo": "/images/technologies/angular.svg"
+        },
+        {
+            "name": "Vue.js",
+            "logo": "/images/technologies/vuejs.svg"
+        },
+        {
+            "name": "Python",
+            "logo": "/images/technologies/python.svg"
+        },
+        {
+            "name": "Go",
+            "logo": "/images/technologies/go.svg"
+        },
+        {
+            "name": "Rust",
+            "logo": "/images/technologies/rust.svg"
+        },
+        {
+            "name": "Springboot",
+            "logo": "/images/technologies/springboot.svg"
+        },
+        {
+            "name": "MongoDB",
+            "logo": "/images/technologies/mongodb.svg"
+        },
+        {
+            "name": "postgreSQL",
+            "logo": "/images/technologies/postgresql.svg"
+        },
+        {
+            "name": "Docker",
+            "logo": "/images/technologies/docker.svg"
+        },
+        {
+            "name": "Kubernetes",
+            "logo": "/images/technologies/kubernetes.svg"
+        },
+        {
+            "name": "AWS",
+            "logo": "/images/technologies/amazon.svg"
+        }
+    ]
 }

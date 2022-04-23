@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { FaGithub, FaLinkedin, FaCodepen } from 'react-icons/fa'
+import About from '../../components/About/About'
+import Experience from '../../components/Experience/Experience'
 
-import Header from "./components/Header"
-import SideMenu from './components/SideMenu'
+import Header from "../../components/Header/Header"
+import Intro from '../../components/Intro/Intro'
+import SideMenu from '../../components/SideMenu/SideMenu'
 
 const Landing: React.FC = () => {
     const [showMenu, setShowMenu] = useState(false)
@@ -35,32 +37,14 @@ const Landing: React.FC = () => {
                     <div className="fixed top-0 z-10 w-full h-12">
                         <Header sideMenuOpened={showMenu} onMenuHandler={onMenuHandler} />
                     </div>
-                    <div className="w-screen h-screen pt-16 px-4 flex flex-col items-center justify-start ">
-                        <div className='w-full h-auto'>
-                            <h1 className='text-primary text-base font-semibold'>Hi There, I'm</h1>
-                        </div>
-                        <div className='w-full h-auto mt-4'>
-                            <h2 className='text-primary text-4xl font-semibold'>Bala Ganapathy Parthiban</h2>
-                        </div>
-                        <div className='w-full h-auto mt-4'>
-                            <h3 className='text-gray-600 text-lg'>
-                                A Software Engineer specialised in frontend and backend development for complex scalable web apps. AI & Blockchain practitioner🤖
-                            </h3>
-                        </div>
-                        <div className='w-full h-auto mt-4 flex flex-row'>
-                            <FaLinkedin className='text-primary w-6 h-6' />
-                            <FaGithub className='text-primary w-6 h-6 mx-4' />
-                            <FaCodepen className='text-primary w-6 h-6' />
-                        </div>
-                        <div className='w-full h-auto mt-12 flex flex-row justify-between items-center text-sm text-center'>
-                            <div className='w-auto h-12 border-2 border-primary rounded px-2 flex flex-row items-center justify-center'>
-                                <span>Check out my works</span>
-                            </div>
-                            <div className='mx-2'></div>
-                            <div className='w-auto h-12 bg-primary text-white rounded px-2 flex flex-row items-center justify-center'>
-                                <span>Check out my resume</span>
-                            </div>
-                        </div>
+                    <div className="w-screen h-screen pt-16 px-4">
+                        <Intro />
+                    </div>
+                    <div className='w-screen h-auto px-4'>
+                        <About />
+                    </div>
+                    <div className='mt-16 w-screen h-auto px-4'>
+                        <Experience />
                     </div>
                 </div>
             </motion.div>
