@@ -55,7 +55,7 @@ const Header: React.FC<IHeader> = (props) => {
     return (
         <motion.header
             ref={headerRef}
-            className="z-10 flex items-center justify-between w-full h-full px-4 py-2 bg-white"
+            className="z-10 flex items-center justify-between w-full h-full px-4 bg-white"
             variants={{
                 visible: { y: 0 },
                 hidden: { y: "-100%" }
@@ -68,7 +68,7 @@ const Header: React.FC<IHeader> = (props) => {
             </div>
             <div className="w-auto h-full flex flex-row items-center">
                 <motion.div
-                    className='w-8 h-full hidden'
+                    className='w-10 h-full hidden'
                     variants={{
                         visible: { opacity: 1, display: "block", x: 0 },
                         hidden: { opacity: 0, display: "none", x: "25%" }

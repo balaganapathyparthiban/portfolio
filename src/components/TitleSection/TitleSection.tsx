@@ -4,9 +4,10 @@ interface ITitleSection {
 
 const TitleSection: React.FC<ITitleSection> = (props) => {
     return (
-        <div className="w-full h-auto flex flex-row items-center">
-            <h2 className="w-auto text-2xl text-primary font-semibold">{props.title}</h2>
-            <div className="ml-2 w-3/5 h-0.5 bg-primary opacity-25"></div>
+        <div className="w-full h-auto z-0 flex flex-row items-center relative">
+            <h2 className="bg-white z-10 w-auto text-2xl text-primary font-semibold">{props.title}</h2>
+            <div className="bg-white z-10 w-2 h-2"></div>
+            <div className="absolute z-0 ml-2 w-full h-0.5 bg-primary opacity-25"></div>
         </div>
     )
 }

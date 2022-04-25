@@ -1,6 +1,14 @@
-import { FaGithub, FaLinkedin, FaCodepen } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
-const Intro: React.FC = () => {
+import appInfo from '../../assets/json/app_info.json'
+import { ReactComponent as JSFiddle} from '../../assets/images/jsfiddle.svg'
+import { redirect, scrollToView } from '../../utils/helper'
+
+interface IInto {
+    projectRef: React.MutableRefObject<HTMLDivElement | null>,
+}
+
+const Intro: React.FC<IInto> = (props) => {
     return (
         <div className="w-full h-full flex flex-col justify-start ">
             <div className='w-full h-auto'>
@@ -14,13 +22,13 @@ const Intro: React.FC = () => {
                     A Software Engineer specialized in frontend and backend development for complex scalable web apps. AI & Blockchain practitioner🤖
                 </h3>
             </div>
-            <div className='w-full h-auto mt-4 flex flex-row'>
-                <FaLinkedin className='text-primary w-6 h-6' />
-                <FaGithub className='text-primary w-6 h-6 mx-4' />
-                <FaCodepen className='text-primary w-6 h-6' />
+            <div className='w-full h-auto mt-4 flex flex-row text-primary '>
+                <FaLinkedin className='w-6 h-6 cursor-pointer' onClick={() => redirect(appInfo.linkedinURL)} />
+                <FaGithub className='w-6 h-6 mx-4 cursor-pointer' onClick={() => redirect(appInfo.githubURL)} />
+                <JSFiddle className='w-8 h-6 cursor-pointer' onClick={() => redirect(appInfo.jsfiddleURL)} />
             </div>
-            <div className='w-64 h-14 mt-12 border-2 border-primary rounded-md text-primary flex flex-row justify-center items-center text-base text-center'>
-                <span>Check out my works!</span>
+            <div className='w-64 h-14 mt-12 border-2 border-primary rounded-md text-primary flex flex-row justify-center items-center text-base text-center cursor-pointer' onClick={() => scrollToView(props.projectRef)}>
+                <p className='tracking-widest'>Check out my works!</p>
             </div>
         </div>
     )

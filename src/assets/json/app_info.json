@@ -1,4 +1,8 @@
 {
+    "emailAddress": "balaganapathy.parthiban@gmail.com",
+    "linkedinURL": "https://www.linkedin.com/in/balaganapathy",
+    "githubURL": "https://github.com/balaganapathyparthiban",
+    "jsfiddleURL": "https://jsfiddle.net/user/balaganapathyparthiban/fiddles/",
     "technologies": [
         {
             "name": "HTML 5",
@@ -67,6 +71,186 @@
         {
             "name": "AWS",
             "logo": "/images/technologies/amazon.svg"
+        }
+    ],
+    "experiences": [
+        {
+            "title": "Infosys Pvt Ltd",
+            "subTitle": "",
+            "logo": "/images/infosys.jpeg",
+            "joined": "2020/06/01",
+            "relieved": "",
+            "duration": "Jun 2020 - Present · 1 yr 11 mos",
+            "location": "Chennai, Tamil Nadu, India",
+            "positions": [
+                {
+                    "title": "Senior System Engineer",
+                    "joined": "2020/07/01",
+                    "relieved": "",
+                    "duration": "Jul 2021 - Present · 10 mos",
+                    "descriptionIntro": "",
+                    "descriptionDetailList": [],
+                    "showMore": false
+                },
+                {
+                    "title": "System Engineer",
+                    "joined": "2020/06/01",
+                    "relieved": "2021/06/01",
+                    "duration": "Jun 2020 - Jun 2021 · 1 yr 1 mo",
+                    "descriptionIntro": "I work in part of BASF team as a Full Stack Developer, My responsibility are:",
+                    "descriptionDetailList": [
+                        "Understanding the business requirement and coming up with an optimal solution.",
+                        "Our Backend requirements were implemented in Java using Springboot and PostgreSQL if a Database is required.",
+                        "Developed interactive web applications using Reactjs & Angular which help us to build the reusable components.",
+                        "Moreover, I am responsible for writing the test case and have to carry out the E2E testing.",
+                        "Supporting the production is also our responsibility."
+                    ],
+                    "showMore": false
+                }
+            ]
+        },
+        {
+            "title": "Casperon Technologies Pvt Ltd",
+            "subTitle": "",
+            "logo": "/images/casperon.jpeg",
+            "joined": "2018/10/01",
+            "relieved": "2020/05/01",
+            "duration": "Oct 2018 - May 2020 · 1 yr 8 mos",
+            "location": "Chennai, Tamil Nadu, India",
+            "positions": [
+                {
+                    "title": "Software Engineer",
+                    "joined": "2018/10/01",
+                    "relieved": "",
+                    "duration": "Oct 2018 - May 2020 · 1 yr 8 mos",
+                    "descriptionIntro": "I work in the MERN & MEAN stack development team,",
+                    "descriptionDetailList": [
+                        "My responsibility is to design & develop the REST API & Database Model as well as developing interactive Web Apps. We mostly build On-Demand applications that include the Customer - Provider Register & Login Module, Social Media Login, SMS & Email Notification, Push Notification, Chat Module, Audio/Video Call Module, Payment Integration, Admin Module and more.",
+                        "After development is completed, its our responsibility to perform unit testing and fix its bugs."
+                    ],
+                    "showMore": false
+                }
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "type": "Open Source Project",
+            "github": "https://github.com/balaganapathyparthiban/portfolio",
+            "siteURL": "https://bginnovate.com/",
+            "title": "BgInnovate - Portfolio",
+            "description": "This is my personal portfolio that you are currenty viewing, If you are liked my work its absolutely fine to use this repo👍.",
+            "infoList": [
+                "Vitejs",
+                "Reactjs",
+                "TailwindCSS",
+                "Framer Motion",
+                "Cloudflare"
+            ],
+            "screenShot": ""
+        },
+        {
+            "type": "Open Source Project",
+            "github": "https://github.com/balaganapathyparthiban/easy-scrum",
+            "siteURL": "https://easyscrum.bginnovate.com/",
+            "title": "Easy Scrum",
+            "description": "Easy scrum is an open source D-APP(Decentralized application) where the data is stored in peer network instead of drive in cloud, This application helps agile and scrum development teams effectively set their sprint goals through collaborative planning and consensus-based estimations also helps to do the retrospective more productive and fun way.",
+            "infoList": [
+                "Vitejs",
+                "Reactjs",
+                "TailwindCSS",
+                "Gunjs"
+            ],
+            "screenShot": "/images/projects/easyscrum.png"
+        },
+        {
+            "type": "Open Source Project",
+            "github": "https://github.com/balaganapathyparthiban/cloudbox",
+            "siteURL": "https://cloudbox.bginnovate.com/",
+            "title": "Cloud Box",
+            "description": "Cloud Box your personal cloud storage which is open source D-APP(Decentralized application), You can keep notes, files, images, videos and anything without control of anyone.",
+            "infoList": [
+                "Vitejs",
+                "Reactjs",
+                "TailwindCSS",
+                "Gunjs",
+                "Web3.Storage"
+            ],
+            "screenShot": "/images/projects/cloudbox.png"
+        },
+        {
+            "type": "Open Source Project",
+            "github": "https://github.com/balaganapathyparthiban/quickshare",
+            "siteURL": "https://quickshare.bginnovate.com/",
+            "title": "Quick Share",
+            "description": "Using Quick Share we can send large files Free - Fast secure file transfer up to 1 GB using a secure link.",
+            "infoList": [
+                "Vitejs",
+                "Reactjs",
+                "TailwindCSS",
+                "Go Backend API"
+            ],
+            "screenShot": "/images/projects/quickshare.png"
+        },
+        {
+            "type": "Open Source Project",
+            "github": "https://github.com/balaganapathyparthiban/quickshare-go",
+            "siteURL": "https://quickshare.bginnovate.com/",
+            "title": "Quick Share API - Go",
+            "description": "Using Quick Share we can send large files Free - Fast secure file transfer up to 1 GB using a secure link.",
+            "infoList": [
+                "Go Fiber Framework",
+                "File Stream Uploading",
+                "Go Level DB",
+                "Heroku"
+            ],
+            "screenShot": "/images/projects/quickshare_go.png"
+        },
+        {
+            "type": "Open Source Project",
+            "github": "https://github.com/balaganapathyparthiban/easy-scrum-nodejs",
+            "siteURL": "https://easyscrum.bginnovate.com/",
+            "title": "Easy Scrum Nodejs Solution",
+            "description": "Easy Scrum server logic was written in Nodejs behind using socket.io. Currently not in production Frontend using Gunjs Decentralized solution.",
+            "infoList": [
+                "Nodejs Express Framework",
+                "Socket.io",
+                "Cron",
+                "Docker",
+                "Ngnix"
+            ],
+            "screenShot": "/images/projects/easyscrum_nodejs.png"
+        },
+        {
+            "type": "Licensed Project",
+            "github": "",
+            "siteURL": "https://eastandwestuniforms.com/",
+            "title": "East & West Uniforms",
+            "description": "East & West Uniforms promises - Quick Delivery, Affordable Price and also Our talented team make sure that there is no compromise in quality of products.",
+            "infoList": [
+                "Vitejs",
+                "Reactjs",
+                "TailwindCSS",
+                "Framer Motion",
+                "Cloudflare"
+            ],
+            "screenShot": "/images/projects/eastwestuniforms.png"
+        },
+        {
+            "type": "Open Source Project",
+            "github": "https://github.com/balaganapathyparthiban/webstore",
+            "siteURL": "",
+            "title": "Webstore",
+            "description": "All in one messenger, and entertainment sites like watching videos via YouTube, Likee, and TikTok, Snapchat, sports sites, and online marketing free.  In this lite browser app, you will also find a tab dedicated to games and another tab for local news and global news. It also contains free social networking sites, like all in one social media app for chat, On your smartphone.  If you search for social networks all in one app, get more apps on your social media browser now to save space on your phone.",
+            "infoList": [
+                "Vitejs",
+                "Reactjs",
+                "Redux",
+                "TailwindCSS",
+                "Capacitorjs",
+                "Java"
+            ],
+            "screenShot": ""
         }
     ]
 }

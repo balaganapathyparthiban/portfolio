@@ -5,9 +5,19 @@
 * { -webkit-tap-highlight-color: transparent; }
 
 html, body, #root {
-    width: 100vw;
+    width: 320px;
     height: 100vh;
+    margin: 0 auto;
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
     @apply text-gray-800;
 } 
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
