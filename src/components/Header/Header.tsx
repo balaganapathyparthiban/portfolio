@@ -4,10 +4,18 @@ import { BiMenuAltLeft } from 'react-icons/bi'
 import { CgArrowLongLeftR } from 'react-icons/cg'
 
 import { ReactComponent as Logo } from '../../assets/images/logo.svg'
+import { scrollToView } from '../../utils/helper'
 
 interface IHeader {
     sideMenuOpened: boolean,
-    onMenuHandler?: (event: React.MouseEvent<any>, status: boolean) => void
+    onMenuHandler?: (event: React.MouseEvent<any>, status: boolean) => void,
+    menuRef: {
+        intro: React.MutableRefObject<HTMLDivElement | null>,
+        about: React.MutableRefObject<HTMLDivElement | null>,
+        experience: React.MutableRefObject<HTMLDivElement | null>,
+        projects: React.MutableRefObject<HTMLDivElement | null>,
+        contact: React.MutableRefObject<HTMLDivElement | null>
+    }
 }
 
 const Header: React.FC<IHeader> = (props) => {
@@ -55,7 +63,7 @@ const Header: React.FC<IHeader> = (props) => {
     return (
         <motion.header
             ref={headerRef}
-            className="z-10 flex items-center justify-between w-full h-full px-4 bg-white"
+            className="z-10 flex items-center justify-between w-full h-auto px-6 py-2 bg-white"
             variants={{
                 visible: { y: 0 },
                 hidden: { y: "-100%" }
@@ -63,10 +71,10 @@ const Header: React.FC<IHeader> = (props) => {
             animate={hidden ? "hidden" : "visible"}
             transition={{ ease: "easeInOut", duration: "0.5" }}
         >
-            <div className="w-10 h-full">
-                <Logo className="w-full h-full text-primary" />
+            <div className="w-10 h-10">
+                <Logo className="w-auto h-full text-primary" />
             </div>
-            <div className="w-auto h-full flex flex-row items-center">
+            <div className="w-auto h-auto flex flex-row items-center md:hidden">
                 <motion.div
                     className='w-10 h-full hidden'
                     variants={{
@@ -89,6 +97,26 @@ const Header: React.FC<IHeader> = (props) => {
                 >
                     <CgArrowLongLeftR className="w-full h-full text-primary cursor-pointer" onClick={(event) => props.onMenuHandler && props.onMenuHandler(event, false)} />
                 </motion.div>
+            </div>
+            <div className='w-auto h-auto hidden flex-row items-center text-primary md:flex'>
+                <div className='w-auto h-4 mx-2 pt-1 flex flex-row items-center justify-center'>
+                    <p className='border-b-2 border-transparent cursor-pointer hover:border-primary' onClick={() => scrollToView(props.menuRef.intro)}>Home</p>
+                </div>
+                <div className='w-auto h-4 mx-2 pt-1 flex flex-row items-center justify-center'>
+                    <p className='border-b-2 border-transparent cursor-pointer hover:border-primary' onClick={() => scrollToView(props.menuRef.about)}>About Me</p>
+                </div>
+                <div className='w-auto h-4 mx-2 pt-1 flex flex-row items-center justify-center'>
+                    <p className='border-b-2 border-transparent cursor-pointer hover:border-primary' onClick={() => scrollToView(props.menuRef.experience)}>Experience</p>
+                </div>
+                <div className='w-auto h-4 mx-2 pt-1 flex flex-row items-center justify-center'>
+                    <p className='border-b-2 border-transparent cursor-pointer hover:border-primary' onClick={() => scrollToView(props.menuRef.projects)}>Projects</p>
+                </div>
+                <div className='w-auto h-4 mx-2 pt-1 flex flex-row items-center justify-center'>
+                    <p className='border-b-2 border-transparent cursor-pointer hover:border-primary' onClick={() => scrollToView(props.menuRef.contact)}>Get In Touch</p>
+                </div>
+                {/* <div className="mx-4 border-2 border-primary w-auto h-auto rounded-md px-4 py-2 cursor-pointer">
+                    <p className="tracking-widest text-sm">Resume</p>
+                </div> */}
             </div>
         </motion.header>
     )

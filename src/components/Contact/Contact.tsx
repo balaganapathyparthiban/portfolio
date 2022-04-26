@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
         <div className="w-full h-auto flex flex-col text-primary">
             <TitleSection title="Get In Touch" />
             <div className="flex flex-col mt-6 text-primary text-center items-center justify-center">
-                <h2 className='text-lg'>
+                <h2 className='w-full h-auto text-lg md:w-96 lg:w-[450px]'>
                     Send a general message or details of a project you'd like me to be a part of and I'll get back to you as soon as possible😀.
                 </h2>
                 <div className='mt-12 w-auto h-auto rounded-md py-3 tracking-wider text-primary border-2 border-primary px-6 flex flex--row item-center justify-center cursor-pointer' onClick={() => redirect(`mailto:${appInfo.emailAddress}`)}>

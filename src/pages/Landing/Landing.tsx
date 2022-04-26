@@ -42,26 +42,38 @@ const Landing: React.FC = () => {
                     style={{ overflowY: showMenu ? "hidden" : "auto" }}
                     onClick={(event) => onMenuHandler(event, false)}
                 >
-                    <div className="fixed top-0 z-10 w-[320px] h-12">
-                        <Header sideMenuOpened={showMenu} onMenuHandler={onMenuHandler} />
+                    <div className="fixed top-0 left-0 right-0 z-10 w-full h-12">
+                        <Header
+                            sideMenuOpened={showMenu}
+                            onMenuHandler={onMenuHandler}
+                            menuRef={{
+                                intro: introRef,
+                                about: aboutRef,
+                                experience: experienceRef,
+                                projects: projectsRef,
+                                contact: contactRef
+                            }}
+                        />
                     </div>
-                    <div ref={introRef} className="w-full h-full pt-16 px-4">
-                        <Intro projectRef={projectsRef} />
-                    </div>
-                    <div ref={aboutRef} className='w-full h-auto px-4'>
-                        <About />
-                    </div>
-                    <div ref={experienceRef} className='mt-16 w-full h-auto px-4'>
-                        <Experience />
-                    </div>
-                    <div ref={projectsRef} className='mt-16 w-full h-auto px-4'>
-                        <Projects />
-                    </div>
-                    <div ref={contactRef} className='mt-16 w-full h-auto px-4'>
-                        <Contact />
-                    </div>
-                    <div className='mt-16 mb-6 w-full h-auto px-4'>
-                        <Footer />
+                    <div className='w-full h-full pt-16 px-6 md:px-12 md:pt-24 lg:px-24 lg:pt-20 xl:w-[1024px] xl:mx-auto'>
+                        <div ref={introRef} className="w-full h-full">
+                            <Intro projectRef={projectsRef} />
+                        </div>
+                        <div ref={aboutRef} className='mt-16 w-full h-auto md:mt-20 lg:mt-24'>
+                            <About />
+                        </div>
+                        <div ref={experienceRef} className='mt-16 w-full h-auto md:mt-20 lg:mt-24'>
+                            <Experience />
+                        </div>
+                        <div ref={projectsRef} className='mt-16 w-full h-auto md:mt-20 lg:mt-24'>
+                            <Projects />
+                        </div>
+                        <div ref={contactRef} className='mt-16 w-full h-auto md:mt-20 lg:mt-24'>
+                            <Contact />
+                        </div>
+                        <div className='mt-16 mb-6 w-full h-auto'>
+                            <Footer />
+                        </div>
                     </div>
                 </div>
             </motion.div>

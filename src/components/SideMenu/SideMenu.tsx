@@ -26,7 +26,7 @@ const SideMenu: React.FC<ISideMenu> = (props) => {
 
     return (
         <motion.div
-            className="absolute top-0 z-10 w-full h-full flex flex-col items-end justify-start overflow-hidden text-white bg-primary"
+            className="absolute top-0 z-10 w-full h-full flex flex-col items-end justify-start overflow-hidden text-white bg-primary md:hidden"
             variants={{
                 visible: {},
                 hidden: {}
@@ -40,14 +40,14 @@ const SideMenu: React.FC<ISideMenu> = (props) => {
                     <MdClose className="text-white w-10 h-10" onClick={(event) => props.onMenuHandler && props.onMenuHandler(event, false)} />
                 </div>
                 <div className="w-full h-full flex flex-col items-center text-white">
-                    <p className="tracking-widest mt-8" onClick={(event) => selectMenu(event, props.menuRef.intro)}>Home</p>
-                    <p className="tracking-widest mt-8" onClick={(event) => selectMenu(event, props.menuRef.about)}>About me</p>
-                    <p className="tracking-widest mt-8" onClick={(event) => selectMenu(event, props.menuRef.experience)}>Experience</p>
-                    <p className="tracking-widest mt-8" onClick={(event) => selectMenu(event, props.menuRef.projects)}>Projects</p>
-                    <p className="tracking-widest mt-8" onClick={(event) => selectMenu(event, props.menuRef.contact)}>Get In Touch</p>
-                    <div className="border-2 border-white w-auto h-auto rounded-md px-4 py-2 mt-10">
+                    <p className="tracking-widest mt-8 cursor-pointer" onClick={(event) => selectMenu(event, props.menuRef.intro)}>Home</p>
+                    <p className="tracking-widest mt-8 cursor-pointer" onClick={(event) => selectMenu(event, props.menuRef.about)}>About me</p>
+                    <p className="tracking-widest mt-8 cursor-pointer" onClick={(event) => selectMenu(event, props.menuRef.experience)}>Experience</p>
+                    <p className="tracking-widest mt-8 cursor-pointer" onClick={(event) => selectMenu(event, props.menuRef.projects)}>Projects</p>
+                    <p className="tracking-widest mt-8 cursor-pointer" onClick={(event) => selectMenu(event, props.menuRef.contact)}>Get In Touch</p>
+                    {/* <div className="border-2 border-white w-auto h-auto rounded-md px-4 py-2 mt-10 cursor-pointer">
                         <p className="tracking-widest">Resume</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </motion.div>
