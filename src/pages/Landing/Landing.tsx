@@ -26,7 +26,7 @@ const Landing: React.FC = () => {
     }
 
     return (
-        <main className="relative w-screen h-screen overflow-hidden">
+        <main className="relative w-full h-full overflow-hidden">
             <motion.div
                 className="absolute top-0 z-20 w-full h-full overflow-hidden shadow-lg"
                 variants={{
