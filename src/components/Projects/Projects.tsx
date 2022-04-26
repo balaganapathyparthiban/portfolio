@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
     return (
         <div className="w-full h-auto flex flex-col text-primary">
             <TitleSection title="Projects" />
-            <div className="flex flex-col mt-6 text-primary">
+            <div className="grid grid-cols-1 gap-y-6 mt-6 text-primary md:grid-cols-2 md:gap-x-6 ">
                 {
                     appInfo.projects.map((project, pIndex) => {
                         return (

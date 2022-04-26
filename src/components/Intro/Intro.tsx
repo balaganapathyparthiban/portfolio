@@ -15,10 +15,10 @@ const Intro: React.FC<IInto> = (props) => {
                 <h1 className='text-primary text-base font-semibold'>Hi There, I'm</h1>
             </div>
             <div className='w-full h-auto mt-4'>
-                <h2 className='text-primary text-4xl font-semibold'>Bala Ganapathy Parthiban</h2>
+                <h2 className='text-primary text-4xl font-semibold md:text-6xl lg:text-8xl'>Bala Ganapathy Parthiban</h2>
             </div>
             <div className='w-full h-auto mt-4'>
-                <h3 className='text-gray-600 text-lg'>
+                <h3 className='text-gray-600 text-lg md:text-xl lg:text-2xl'>
                     A Software Engineer specialized in frontend and backend development for complex scalable web apps. AI & Blockchain practitioner🤖
                 </h3>
             </div>
