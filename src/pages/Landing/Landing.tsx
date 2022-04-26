@@ -26,7 +26,7 @@ const Landing: React.FC = () => {
     }
 
     return (
-        <main className="relative w-full h-full overflow-hidden">
+        <main className="relative w-screen h-screen overflow-hidden">
             <motion.div
                 className="absolute top-0 z-20 w-full h-full overflow-hidden shadow-lg"
                 variants={{
@@ -42,7 +42,7 @@ const Landing: React.FC = () => {
                     style={{ overflowY: showMenu ? "hidden" : "auto" }}
                     onClick={(event) => onMenuHandler(event, false)}
                 >
-                    <div className="fixed top-0 left-0 right-0 z-10 w-full h-12">
+                    <div className="fixed top-0 left-0 z-10 w-full h-12">
                         <Header
                             sideMenuOpened={showMenu}
                             onMenuHandler={onMenuHandler}
