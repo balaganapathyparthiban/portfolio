@@ -10,7 +10,7 @@ interface IInto {
 
 const Intro: React.FC<IInto> = (props) => {
     return (
-        <div className="w-full h-full flex flex-col justify-start ">
+        <div className="w-full h-full flex flex-col justify-center">
             <div className='w-full h-auto'>
                 <h1 className='text-primary text-base font-semibold'>Hi There, I'm</h1>
             </div>
