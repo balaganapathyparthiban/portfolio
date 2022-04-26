@@ -33,7 +33,7 @@ const Header: React.FC<IHeader> = (props) => {
             if (landingViewPort.scrollTop < previousScrollTop && scrollRef.current) {
                 scrollRef.current = false
                 setHidden(false);
-            } else if (landingViewPort.scrollTop > 46 && landingViewPort.scrollTop > previousScrollTop && !scrollRef.current) {
+            } else if (landingViewPort.scrollTop > 24 && landingViewPort.scrollTop > previousScrollTop && !scrollRef.current) {
                 scrollRef.current = true
                 setHidden(true);
             }
