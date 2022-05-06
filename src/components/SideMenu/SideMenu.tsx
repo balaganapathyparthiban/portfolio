@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import { MdClose } from 'react-icons/md'
 
-import { scrollToView } from "../../utils/helper"
+import { redirect, scrollToView } from "../../utils/helper"
 
 interface ISideMenu {
     show: boolean,
@@ -45,9 +45,9 @@ const SideMenu: React.FC<ISideMenu> = (props) => {
                     <p className="tracking-widest mt-8 cursor-pointer" onClick={(event) => selectMenu(event, props.menuRef.experience)}>Experience</p>
                     <p className="tracking-widest mt-8 cursor-pointer" onClick={(event) => selectMenu(event, props.menuRef.projects)}>Projects</p>
                     <p className="tracking-widest mt-8 cursor-pointer" onClick={(event) => selectMenu(event, props.menuRef.contact)}>Get In Touch</p>
-                    {/* <div className="border-2 border-white w-auto h-auto rounded-md px-4 py-2 mt-10 cursor-pointer">
+                    <div className="border-2 border-white w-auto h-auto rounded-md px-4 py-2 mt-10 cursor-pointer hover:bg-white hover:text-primary" onClick={() => redirect("/resume.pdf", '_blank')}>
                         <p className="tracking-widest">Resume</p>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </motion.div>

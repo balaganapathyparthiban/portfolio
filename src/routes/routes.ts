@@ -10,7 +10,7 @@ const RouteList: IRoute[] = [
     {
         path: RouteConst.landing,
         component: Landing
-    }
+    },
 ]
 
 export default RouteList

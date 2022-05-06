@@ -53,7 +53,7 @@ const Experience: React.FC = () => {
                                                                             {!position.showMore ? detail.substring(0, 30) : detail}
                                                                             {
                                                                                 !position.showMore ?
-                                                                                    <span className="font-semibold"
+                                                                                    <span className="font-semibold cursor-pointer"
                                                                                         onClick={() => {
                                                                                             setExperiences(experiences.map((each, eachIndex) => {
                                                                                                 if (eachIndex === eIndex) {
