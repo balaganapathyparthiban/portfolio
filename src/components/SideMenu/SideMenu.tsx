@@ -1,4 +1,3 @@
-import { motion } from "framer-motion"
 import { MdClose } from 'react-icons/md'
 
 import { redirect, scrollToView } from "../../utils/helper"
@@ -25,15 +24,8 @@ const SideMenu: React.FC<ISideMenu> = (props) => {
     }
 
     return (
-        <motion.div
-            className="absolute top-0 z-10 w-full h-full flex flex-col items-end justify-start overflow-hidden text-white bg-primary md:hidden"
-            variants={{
-                visible: {},
-                hidden: {}
-            }}
-            animate={props.show ? "visible" : "hidden"}
-            exit="hidden"
-            transition={{ ease: "anticipate", duration: "0.5" }}
+        <div
+            className="absolute top-0 left-0 right-0 bottom-0 z-10 w-full h-full flex flex-col items-end justify-start overflow-hidden text-white bg-primary md:hidden"
         >
             <div className="w-3/5 h-full flex flex-col pl-4 pb-6">
                 <div className="w-full h-12 flex flex-row items-center justify-end">
@@ -50,7 +42,7 @@ const SideMenu: React.FC<ISideMenu> = (props) => {
                     </div>
                 </div>
             </div>
-        </motion.div>
+        </div>
     )
 }
 
