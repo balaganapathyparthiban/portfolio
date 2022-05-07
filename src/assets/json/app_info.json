@@ -37,6 +37,10 @@
             "logo": "/images/technologies/vuejs.svg"
         },
         {
+            "name": "Node JS",
+            "logo": "/images/technologies/nodejs.svg"
+        },
+        {
             "name": "Python",
             "logo": "/images/technologies/python.svg"
         },

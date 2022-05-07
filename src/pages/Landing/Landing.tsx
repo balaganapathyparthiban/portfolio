@@ -23,7 +23,7 @@ const Landing: React.FC = () => {
     const onMenuHandler = (event: React.MouseEvent<any>, status: boolean) => {
         event.preventDefault()
         event.stopPropagation()
-
+        
         setShowMenu(status)
     }
 
@@ -32,7 +32,7 @@ const Landing: React.FC = () => {
             <SplashScreen>
                 <main className="relative w-full h-full overflow-hidden">
                     <motion.div
-                        className="absolute top-0 z-20 w-full h-full overflow-hidden shadow-lg"
+                        className="absolute top-0 left-0 right-0 bottom-0 z-20 w-full h-full overflow-hidden shadow-lg"
                         variants={{
                             visible: { x: "-60%" },
                             hidden: { x: 0 }
@@ -47,7 +47,7 @@ const Landing: React.FC = () => {
                             onClick={(event) => onMenuHandler(event, false)}
                         >
                             <motion.div
-                                className="fixed top-0 left-0 right-0 z-10 w-full h-12"
+                                className="fixed top-0 left-0 right-0 z-10 w-full h-auto"
                                 variants={{
                                     visible: { y: 0, opacity: 1 },
                                     hidden: { y: "-100px", opacity: 0 }
