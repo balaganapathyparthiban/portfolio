@@ -30,7 +30,7 @@ const Landing: React.FC = () => {
     return (
         <>
             <SplashScreen>
-                <main className="relative w-screen h-screen overflow-hidden">
+                <main className="relative w-full h-full overflow-hidden">
                     <motion.div
                         className="absolute top-0 z-20 w-full h-full overflow-hidden shadow-lg"
                         variants={{
@@ -47,7 +47,7 @@ const Landing: React.FC = () => {
                             onClick={(event) => onMenuHandler(event, false)}
                         >
                             <motion.div
-                                className="fixed top-0 left-0 z-10 w-full h-12"
+                                className="fixed top-0 left-0 right-0 z-10 w-full h-12"
                                 variants={{
                                     visible: { y: 0, opacity: 1 },
                                     hidden: { y: "-100px", opacity: 0 }

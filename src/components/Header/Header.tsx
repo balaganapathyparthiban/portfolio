@@ -30,10 +30,10 @@ const Header: React.FC<IHeader> = (props) => {
         let previousScrollTop = 0
         landingViewPort?.addEventListener("scroll", (event) => {
             /* Checking scroll-y, Scrolling in up or bottom direction to hide header */
-            if (landingViewPort.scrollTop < previousScrollTop && scrollRef.current) {
+            if ((landingViewPort.scrollTop < previousScrollTop) && scrollRef.current) {
                 scrollRef.current = false
                 setHidden(false);
-            } else if (landingViewPort.scrollTop > 24 && landingViewPort.scrollTop > previousScrollTop && !scrollRef.current) {
+            } else if ((landingViewPort.scrollTop > 12) && (landingViewPort.scrollTop > (previousScrollTop + 12)) && !scrollRef.current) {
                 scrollRef.current = true
                 setHidden(true);
             }
