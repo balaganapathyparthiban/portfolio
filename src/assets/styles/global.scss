@@ -3,20 +3,29 @@
 @tailwind utilities;
 
 * { -webkit-tap-highlight-color: transparent; }
-  
-:root {
-    --app-height: 100%;
-}
 
-html, body, #root {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: var(--app-height);
-    overflow: hidden;
-    font-family: 'Roboto', sans-serif;
-    @apply text-gray-800;
-} 
+html {
+    height: 100vh;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    :focus{
+      outline: none !important;
+    }
+    
+    body {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      @apply text-gray-800;
+  
+      #root {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 
 ::-webkit-scrollbar {
     width: 0;

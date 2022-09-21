@@ -8,7 +8,7 @@ import TitleSection from "../TitleSection/TitleSection"
 const Projects: React.FC = () => {
     return (
         <div className="w-full h-auto flex flex-col text-primary">
-            <TitleSection title="Projects" />
+            <TitleSection title="Open Source" />
             <div className="grid grid-cols-1 gap-y-6 mt-6 text-primary md:grid-cols-2 md:gap-x-6 ">
                 {
                     appInfo.projects.map((project, pIndex) => {

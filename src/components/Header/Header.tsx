@@ -109,7 +109,7 @@ const Header: React.FC<IHeader> = (props) => {
                     <p className='border-b-2 border-transparent cursor-pointer hover:border-primary' onClick={() => scrollToView(props.menuRef.experience)}>Experience</p>
                 </div>
                 <div className='w-auto h-4 mx-2 pt-1 flex flex-row items-center justify-center'>
-                    <p className='border-b-2 border-transparent cursor-pointer hover:border-primary' onClick={() => scrollToView(props.menuRef.projects)}>Projects</p>
+                    <p className='border-b-2 border-transparent cursor-pointer hover:border-primary' onClick={() => scrollToView(props.menuRef.projects)}>Open Source</p>
                 </div>
                 <div className='w-auto h-4 mx-2 pt-1 flex flex-row items-center justify-center'>
                     <p className='border-b-2 border-transparent cursor-pointer hover:border-primary' onClick={() => scrollToView(props.menuRef.contact)}>Get In Touch</p>

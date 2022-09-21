@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import {
   BrowserRouter,
@@ -14,15 +14,6 @@ import './assets/styles/global.scss'
 import { RecoilRoot } from "recoil";
 
 const App: React.FC = () => {
-
-  useEffect(() => {
-    const appHeight = () => {
-      const doc = document.documentElement
-      doc.style.setProperty('--app-height', `${window.innerHeight}px`)
-    }
-    window.addEventListener('resize', appHeight)
-    appHeight()
-  }, [])
 
   return (
     <Routes>

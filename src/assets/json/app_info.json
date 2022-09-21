@@ -82,24 +82,24 @@
             "title": "Infosys Pvt Ltd",
             "subTitle": "",
             "logo": "/images/infosys.jpeg",
-            "joined": "2020/06/01",
+            "joined": "2020-06-01",
             "relieved": "",
-            "duration": "Jun 2020 - Present · 1 yr 11 mos",
+            "duration": "Jun 2020 - Present · 2 yr 4 mos",
             "location": "Chennai, Tamil Nadu, India",
             "positions": [
                 {
                     "title": "Senior System Engineer",
-                    "joined": "2020/07/01",
+                    "joined": "2021-07-01",
                     "relieved": "",
-                    "duration": "Jul 2021 - Present · 10 mos",
+                    "duration": "Jul 2021 - Present · 1 yr 3 mos",
                     "descriptionIntro": "",
                     "descriptionDetailList": [],
                     "showMore": false
                 },
                 {
                     "title": "System Engineer",
-                    "joined": "2020/06/01",
-                    "relieved": "2021/06/01",
+                    "joined": "2020-06-01",
+                    "relieved": "2021-06-30",
                     "duration": "Jun 2020 - Jun 2021 · 1 yr 1 mo",
                     "descriptionIntro": "I work in part of BASF team as a Full Stack Developer, My responsibility are:",
                     "descriptionDetailList": [
@@ -117,15 +117,15 @@
             "title": "Casperon Technologies Pvt Ltd",
             "subTitle": "",
             "logo": "/images/casperon.jpeg",
-            "joined": "2018/10/01",
-            "relieved": "2020/05/01",
+            "joined": "2018-10-01",
+            "relieved": "2020-05-31",
             "duration": "Oct 2018 - May 2020 · 1 yr 8 mos",
             "location": "Chennai, Tamil Nadu, India",
             "positions": [
                 {
                     "title": "Software Engineer",
-                    "joined": "2018/10/01",
-                    "relieved": "",
+                    "joined": "2018-10-01",
+                    "relieved": "2020-05-31",
                     "duration": "Oct 2018 - May 2020 · 1 yr 8 mos",
                     "descriptionIntro": "I work in the MERN & MEAN stack development team,",
                     "descriptionDetailList": [
@@ -139,7 +139,7 @@
     ],
     "projects": [
         {
-            "type": "Open Source Project",
+            "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/portfolio",
             "siteURL": "https://bginnovate.com/",
             "title": "BgInnovate - Portfolio",
@@ -154,7 +154,7 @@
             "screenShot": ""
         },
         {
-            "type": "Open Source Project",
+            "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/easy-scrum",
             "siteURL": "https://easyscrum.bginnovate.com/",
             "title": "Easy Scrum",
@@ -168,7 +168,7 @@
             "screenShot": "/images/projects/easyscrum.png"
         },
         {
-            "type": "Open Source Project",
+            "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/cloudbox",
             "siteURL": "https://cloudbox.bginnovate.com/",
             "title": "Cloud Box",
@@ -183,7 +183,7 @@
             "screenShot": "/images/projects/cloudbox.png"
         },
         {
-            "type": "Open Source Project",
+            "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/quickshare",
             "siteURL": "https://quickshare.bginnovate.com/",
             "title": "Quick Share",
@@ -197,7 +197,7 @@
             "screenShot": "/images/projects/quickshare.png"
         },
         {
-            "type": "Open Source Project",
+            "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/quickshare-go",
             "siteURL": "https://quickshare.bginnovate.com/",
             "title": "Quick Share API - Go",
@@ -211,7 +211,7 @@
             "screenShot": "/images/projects/quickshare_go.png"
         },
         {
-            "type": "Open Source Project",
+            "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/easy-scrum-nodejs",
             "siteURL": "https://easyscrum.bginnovate.com/",
             "title": "Easy Scrum Nodejs Solution",
@@ -226,7 +226,7 @@
             "screenShot": "/images/projects/easyscrum_nodejs.png"
         },
         {
-            "type": "Licensed Project",
+            "type": "",
             "github": "",
             "siteURL": "https://eastandwestuniforms.com/",
             "title": "East & West Uniforms",
@@ -241,7 +241,7 @@
             "screenShot": "/images/projects/eastwestuniforms.png"
         },
         {
-            "type": "Open Source Project",
+            "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/webstore",
             "siteURL": "",
             "title": "Webstore",

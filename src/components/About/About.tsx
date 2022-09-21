@@ -35,7 +35,7 @@ const About: React.FC<IAbout> = (props) => {
                     </div>
                 </div>
                 <div className='mt-8 relative z-0 lg:mt-0'>
-                    <img className='w-64 rounded-md shadow-md grayscale-[75%] z-10 hover:grayscale-0 md:w-80 lg:w-96 lg:p-2 lg:shadow-none' src="/images/profile.jpg" />
+                    <img className='w-64 rounded-md shadow-md grayscale-[75%] z-10 hover:grayscale-0 md:w-80 lg:w-96 lg:m-2 lg:shadow-none' src="/images/profile.jpg" />
                     <div className='absolute top-0 left-0 right-0 bottom-0 opacity-25 bg-primary w-36 h-full z-[-1] hidden lg:block'></div>
                 </div>
             </div>
