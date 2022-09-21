@@ -35,7 +35,7 @@ const SideMenu: React.FC<ISideMenu> = (props) => {
                     <p className="tracking-widest mt-8 cursor-pointer" onClick={(event) => selectMenu(event, props.menuRef.intro)}>Home</p>
                     <p className="tracking-widest mt-8 cursor-pointer" onClick={(event) => selectMenu(event, props.menuRef.about)}>About me</p>
                     <p className="tracking-widest mt-8 cursor-pointer" onClick={(event) => selectMenu(event, props.menuRef.experience)}>Experience</p>
-                    <p className="tracking-widest mt-8 cursor-pointer" onClick={(event) => selectMenu(event, props.menuRef.projects)}>Projects</p>
+                    <p className="tracking-widest mt-8 cursor-pointer" onClick={(event) => selectMenu(event, props.menuRef.projects)}>Open Source</p>
                     <p className="tracking-widest mt-8 cursor-pointer" onClick={(event) => selectMenu(event, props.menuRef.contact)}>Get In Touch</p>
                     <div className="border-2 border-white w-auto h-auto rounded-md px-4 py-2 mt-10 cursor-pointer hover:bg-white hover:text-primary" onClick={() => redirect("/resume.pdf", '_blank')}>
                         <p className="tracking-widest">Resume</p>
