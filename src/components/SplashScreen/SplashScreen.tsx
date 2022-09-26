@@ -9,7 +9,7 @@ const SplashScreen: React.FC = (props) => {
     useEffect(() => {
         setTimeout(() => {
             setShowSplashScreen(false)
-        }, 6000)
+        }, 2000)
     }, [])
 
     if (!showSplashScreen) {
