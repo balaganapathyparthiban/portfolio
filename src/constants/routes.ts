@@ -1,5 +1,6 @@
 const RouteConst = {
     landing: "/",
+    resume: "/resume",
     unknown: "*"
 }
 

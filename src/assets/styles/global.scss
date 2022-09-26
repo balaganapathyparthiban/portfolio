@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-* { -webkit-tap-highlight-color: transparent; }
+* { -webkit-tap-highlight-color: transparent; box-sizing: border-box; }
 
 html {
     height: 100vh;

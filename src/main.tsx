@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 
 import RouteConst from "./constants/routes";
-import RouteList from "./routes/routes";
+import routes from "./routes/routes";
 
 import './assets/styles/global.scss'
 import { RecoilRoot } from "recoil";
@@ -18,8 +18,8 @@ const App: React.FC = () => {
   return (
     <Routes>
       {
-        RouteList.map(r => (
-          <Route key={r.path} path={r.path} element={<r.component />} />
+        routes.map(route => (
+          <Route key={route.path} path={route.path} element={<route.component />} />
         ))
       }
       <Route path={RouteConst.unknown} element={<Navigate to={RouteConst.landing} />} />

@@ -6,11 +6,11 @@ export interface IRoute {
     component: React.FC;
 }
 
-const RouteList: IRoute[] = [
+const routes: IRoute[] = [
     {
         path: RouteConst.landing,
         component: Landing
-    },
+    }
 ]
 
-export default RouteList
+export default routes
