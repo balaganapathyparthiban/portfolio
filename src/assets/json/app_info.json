@@ -141,8 +141,8 @@
         {
             "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/portfolio",
-            "siteURL": "https://bginnovate.com/",
-            "title": "BgInnovate - Portfolio",
+            "siteURL": "https://balaganapathy.dev/",
+            "title": "Bala Ganapathy Parthiban",
             "description": "This is my personal portfolio that you are currenty viewing, If you are liked my work its absolutely fine to use this repo👍.",
             "infoList": [
                 "Vitejs",
@@ -156,7 +156,7 @@
         {
             "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/easy-scrum",
-            "siteURL": "https://easyscrum.bginnovate.com/",
+            "siteURL": "https://easyscrum.balaganapathy.dev/",
             "title": "Easy Scrum",
             "description": "Easy scrum is an open source D-APP(Decentralized application) where the data is stored in peer network instead of drive in cloud, This application helps agile and scrum development teams effectively set their sprint goals through collaborative planning and consensus-based estimations also helps to do the retrospective more productive and fun way.",
             "infoList": [
@@ -170,7 +170,7 @@
         {
             "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/cloudbox",
-            "siteURL": "https://cloudbox.bginnovate.com/",
+            "siteURL": "https://cloudbox.balaganapathy.dev/",
             "title": "Cloud Box",
             "description": "Cloud Box your personal cloud storage which is open source D-APP(Decentralized application), You can keep notes, files, images, videos and anything without control of anyone.",
             "infoList": [
@@ -185,7 +185,7 @@
         {
             "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/quickshare",
-            "siteURL": "https://quickshare.bginnovate.com/",
+            "siteURL": "https://quickshare.balaganapathy.dev/",
             "title": "Quick Share",
             "description": "Using Quick Share we can send large files Free - Fast secure file transfer up to 1 GB using a secure link.",
             "infoList": [
@@ -199,7 +199,7 @@
         {
             "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/quickshare-go",
-            "siteURL": "https://quickshare.bginnovate.com/",
+            "siteURL": "https://quickshare.balaganapathy.dev/",
             "title": "Quick Share API - Go",
             "description": "Using Quick Share we can send large files Free - Fast secure file transfer up to 1 GB using a secure link.",
             "infoList": [
@@ -213,7 +213,7 @@
         {
             "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/easy-scrum-nodejs",
-            "siteURL": "https://easyscrum.bginnovate.com/",
+            "siteURL": "https://easyscrum.balaganapathy.dev/",
             "title": "Easy Scrum Nodejs Solution",
             "description": "Easy Scrum server logic was written in Nodejs behind using socket.io. Currently not in production Frontend using Gunjs Decentralized solution.",
             "infoList": [
