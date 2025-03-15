@@ -114,7 +114,7 @@ const Header: React.FC<IHeader> = (props) => {
                 <div className='w-auto h-4 mx-2 pt-1 flex flex-row items-center justify-center'>
                     <p className='border-b-2 border-transparent cursor-pointer hover:border-primary' onClick={() => scrollToView(props.menuRef.contact)}>Get In Touch</p>
                 </div>
-                <div className="mx-4 border-2 border-primary w-auto h-auto rounded-md px-4 py-2 cursor-pointer hover:bg-primary hover:text-white" onClick={() => redirect("/resume.pdf", '_blank')}>
+                <div className="mx-4 border-2 border-primary w-auto h-auto rounded-md px-4 py-2 cursor-pointer hover:bg-primary hover:text-white" onClick={() => redirect("/Bala_Ganapathy_Parthiban_Resume.pdf", '_blank')}>
                     <p className="tracking-widest text-sm">Resume</p>
                 </div>
             </div>

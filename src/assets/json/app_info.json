@@ -88,10 +88,25 @@
             "location": "Chennai, Tamil Nadu, India",
             "positions": [
                 {
+                    "title": "Technology Lead",
+                    "joined": "2024-10-01",
+                    "relieved": "",
+                    "descriptionIntro": "",
+                    "descriptionDetailList": [],
+                    "showMore": false
+                },
+                {
+                    "title": "Technology Analyst",
+                    "joined": "2022-06-01",
+                    "relieved": "2024-10-01",
+                    "descriptionIntro": "",
+                    "descriptionDetailList": [],
+                    "showMore": false
+                },
+                {
                     "title": "Senior System Engineer",
                     "joined": "2021-07-01",
-                    "relieved": "",
-                    "duration": "Jul 2021 - Present · 1 yr 3 mos",
+                    "relieved": "2022-06-01",
                     "descriptionIntro": "",
                     "descriptionDetailList": [],
                     "showMore": false
@@ -100,7 +115,6 @@
                     "title": "System Engineer",
                     "joined": "2020-06-01",
                     "relieved": "2021-06-30",
-                    "duration": "Jun 2020 - Jun 2021 · 1 yr 1 mo",
                     "descriptionIntro": "I work in part of BASF team as a Full Stack Developer, My responsibility are:",
                     "descriptionDetailList": [
                         "Understanding the business requirement and coming up with an optimal solution.",
@@ -141,7 +155,7 @@
         {
             "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/portfolio",
-            "siteURL": "https://balaganapathy.dev/",
+            "siteURL": "https://balaganapathy.in/",
             "title": "Bala Ganapathy Parthiban",
             "description": "This is my personal portfolio that you are currenty viewing, If you are liked my work its absolutely fine to use this repo👍.",
             "infoList": [
@@ -156,7 +170,7 @@
         {
             "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/easy-scrum",
-            "siteURL": "https://easyscrum.balaganapathy.dev/",
+            "siteURL": "https://easyscrum.balaganapathy.in/",
             "title": "Easy Scrum",
             "description": "Easy scrum is an open source D-APP(Decentralized application) where the data is stored in peer network instead of drive in cloud, This application helps agile and scrum development teams effectively set their sprint goals through collaborative planning and consensus-based estimations also helps to do the retrospective more productive and fun way.",
             "infoList": [
@@ -170,7 +184,7 @@
         {
             "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/cloudbox",
-            "siteURL": "https://cloudbox.balaganapathy.dev/",
+            "siteURL": "https://cloudbox.balaganapathy.in/",
             "title": "Cloud Box",
             "description": "Cloud Box your personal cloud storage which is open source D-APP(Decentralized application), You can keep notes, files, images, videos and anything without control of anyone.",
             "infoList": [
@@ -185,7 +199,7 @@
         {
             "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/quickshare",
-            "siteURL": "https://quickshare.balaganapathy.dev/",
+            "siteURL": "https://quickshare.balaganapathy.in/",
             "title": "Quick Share",
             "description": "Using Quick Share we can send large files Free - Fast secure file transfer up to 1 GB using a secure link.",
             "infoList": [
@@ -199,7 +213,7 @@
         {
             "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/quickshare-go",
-            "siteURL": "https://quickshare.balaganapathy.dev/",
+            "siteURL": "https://quickshare.balaganapathy.in/",
             "title": "Quick Share API - Go",
             "description": "Using Quick Share we can send large files Free - Fast secure file transfer up to 1 GB using a secure link.",
             "infoList": [
@@ -213,7 +227,7 @@
         {
             "type": "Open Source",
             "github": "https://github.com/balaganapathyparthiban/easy-scrum-nodejs",
-            "siteURL": "https://easyscrum.balaganapathy.dev/",
+            "siteURL": "https://easyscrum.balaganapathy.in/",
             "title": "Easy Scrum Nodejs Solution",
             "description": "Easy Scrum server logic was written in Nodejs behind using socket.io. Currently not in production Frontend using Gunjs Decentralized solution.",
             "infoList": [
@@ -239,22 +253,6 @@
                 "Cloudflare"
             ],
             "screenShot": "/images/projects/eastwestuniforms.png"
-        },
-        {
-            "type": "Open Source",
-            "github": "https://github.com/balaganapathyparthiban/webstore",
-            "siteURL": "",
-            "title": "Webstore",
-            "description": "All in one messenger, and entertainment sites like watching videos via YouTube, Likee, and TikTok, Snapchat, sports sites, and online marketing free.  In this lite browser app, you will also find a tab dedicated to games and another tab for local news and global news. It also contains free social networking sites, like all in one social media app for chat, On your smartphone.  If you search for social networks all in one app, get more apps on your social media browser now to save space on your phone.",
-            "infoList": [
-                "Vitejs",
-                "Reactjs",
-                "Redux",
-                "TailwindCSS",
-                "Capacitorjs",
-                "Java"
-            ],
-            "screenShot": ""
         }
     ]
 }
